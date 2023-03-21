@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0 auto;
+  background: #f8e6d6;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #2c3639;
+  color: #a27b5c;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style mode of operation section */
+.mode-of-operation {
+  flex: 30%;
+  padding: 20px;
+  background: #e1f0f5;
+  margin: 10px auto;
+  color: #1a1f20;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.mode-of-operation h3 {
+  font-size: 1.7rem;
+  color: #64340d;
+}
+
+.mode-of-operation li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+/* Provide information form section / Body of the App */
+.app-body {
+  flex: 70%;
+  background: #2c3639;
+  margin: 10px auto;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form h2 {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.form div {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.form label,
+.form input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #a27b5c;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form input,
+textarea {
+  background-color: #dcd7c9;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form textarea {
+  min-height: 400px;
+  font-size: larger;
+  font-style: oblique;
+}
+
+.form input {
+  height: 60px;
+  border: none;
+  font-size: larger;
+}
+
+#submit {
+  background-color: #a27b5c;
+  color: #dcd7c9;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.share div button:hover,
+#submit:hover {
+  background-color: #3f4e4f;
+}
+
+#err {
+  color: crimson;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* preview container styling  */
+.preview-container {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.preview-container h3 {
+  text-align: center;
+  color: crimson;
+}
+
+.preview-paragraph {
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 300px;
+  color: #1b2324;
+  background-color: #e1f0f5;
+  position: relative;
+}
+
+.preview-paragraph i {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 1.2rem;
+}
+
+.preview-paragraph:hover > i {
+  display: inline;
+  color: #dcd7c9;
+}
+
+.share {
+  display: flex;
+}
+
+.share div {
+  width: 100%;
+}
+
+.share div button {
+  padding: 15px 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #a27b5c;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.fab,
+.fas,
+.far {
+  font-size: 1.3rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* first issue.................................................................................. */
+.social-btn {
+  color: unset;
+  text-decoration: none;
+}
+
+.stat {
+  color: #dcd7c9;
+}
+
+.stat h3 {
+  text-align: left;
+}
+
+.stat hr {
+  margin: 0;
+  width: 100px;
+}
+.stat p {
+  color: #c28e00;
+}
+.stat p span {
+  color: #362211;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #2c3639;
+  color: #e1f0f5;
+  font-size: larger;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #e1f0f5;
+  font-weight: bold;
+}
+
+/* MEDIA QUERRY*/
+@media screen and (max-width: 750px) {
+  .header,
+  .main {
+    min-width: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .main {
+    padding: 10px;
+  }
+  .share {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .share div button {
+    width: 100%;
+    padding: 20px;
+  }
+}
