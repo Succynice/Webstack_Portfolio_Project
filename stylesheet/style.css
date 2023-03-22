@@ -66,7 +66,7 @@ a.download-btn {
 
 /* intro styles */
 .intro {
-  margin: 7rem 0 auto auto;
+  margin: 3rem 0 auto auto;
 }
 
 .intro-lead-test {
@@ -84,10 +84,10 @@ a.download-btn {
 .intro-header {
   color: var(--color-primary);
 
-  letter-spacing: 0.2rem;
+  /* letter-spacing: 0.2rem; */
   font-weight: 950;
   font-size: larger;
-  line-height: 4rem;
+  /* line-height: 4rem; */
 }
 .intro-header span {
   color: var(--color-black);
@@ -127,9 +127,9 @@ a.download-btn {
 }
 
 /* Getting Started */
-#get-started {
+/* #get-started {
   margin: 7rem 2rem;
-}
+} */
 
 #get-started h1 {
   color: var(--color-secondary);
@@ -137,6 +137,7 @@ a.download-btn {
   letter-spacing: 0.4rem;
   font-weight: 900;
   line-height: 1.5rem;
+  font-size: xx-large;
 }
 
 .logo-img-2 {
@@ -172,6 +173,7 @@ a.download-btn {
   margin: 2rem auto;
 
   border-color: var(--color-primary);
+  border-width: thick;
 }
 
 /* Card Section */
