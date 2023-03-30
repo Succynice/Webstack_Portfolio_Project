@@ -16,7 +16,7 @@ const validateInput = (input1, input2, input3) => {
     } else if ((input3.value).length > 1) {
       input2.style = "border: 1px solid green";
       input3.style = "border: 1px solid red";
-      err.innerHTML = "Please provide only one characher";
+      err.innerHTML = "Please provide only one character";
     }
     return false;
   }
